@@ -4,7 +4,7 @@ export async function generateArticleDraft(title, category) {
   try {
     const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 
-    // ✅ using gemini-2.5-flash as you asked
+    
     const model = genAI.getGenerativeModel({
       model: "gemini-2.5-flash",
     });
